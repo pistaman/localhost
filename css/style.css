@@ -1,0 +1,466 @@
+img {
+  max-width: 100%;
+}
+
+.google-font {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.Global-header {
+  width: 100%;
+}
+
+.Header-contents {
+  line-height: 1.8em;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header-left {
+  display: flex;
+  margin-left: 120px;
+}
+
+.Header-right {
+  margin-right: 90px;
+}
+
+.Header-logo {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.Header-sns {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header-sns img {
+  /*画像の荒れがmax使うと改善されるなぜ*/
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.Information {
+  color: #808080;
+}
+
+.Information::first-line {
+  color: black;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.Header-navigation {
+  list-style: none;
+  padding: 0;
+  height: 30px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-weight: 600;
+}
+
+.Header-navigation a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Header-navigation li:hover:nth-child(odd) a {
+  color: #0099FF;
+}
+
+.Header-navigation li:hover:nth-child(even) a {
+  color: #FF9900;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid gray;
+}
+
+.Mainmenu {
+  height: 700px;
+  display: flex;
+  margin-top: -9px;
+  /*8だと少し隙間があるなぜ*/
+}
+
+.Mainmenu-contents {
+  color: #FFF;
+  letter-spacing: 1.5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.Designer {
+  background-image: url(../image/top1.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+  line-height: 1.8em;
+  background-color: #FF9900;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Designer-title {
+  letter-spacing: 4.0px;
+}
+
+.Engineer {
+  background-image: url(../image/top2.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  opacity: 0.8;
+  width: 50%;
+  height: 100%;
+  line-height: 1.8em;
+  background-color: #0099FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Engineer-title {
+  letter-spacing: 4.0px;
+}
+
+.Button {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #FFF;
+  text-decoration: none;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button:hover {
+  background-color: #808080;
+  border: 2px solid #FFF;
+}
+
+.Button:hover span {
+  color: #FFF;
+}
+
+.More-designer {
+  font-weight: bold;
+  color: #FF9900;
+}
+
+.More-engineer {
+  font-weight: bold;
+  color: #0099FF;
+}
+
+.About {
+  height: 400px;
+}
+
+.About-contents {
+  height: 100%;
+  width: 100%;
+  line-height: 1.8em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.About-title {
+  width: 250px;
+  margin: 0 auto;
+  border-bottom: 2px solid #FF9900;
+  letter-spacing: 3.0px;
+}
+
+.About-description {
+  margin-top: 60px;
+  letter-spacing: 1.0px;
+}
+
+.Plan {
+  height: 650px;
+  background-color: #FF9900;
+  opacity: 0.8;
+}
+
+.Plan-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Plan-contents h2 {
+  color: #FFF;
+  border-bottom: 2px solid #FFF;
+  margin: 40px 0;
+  letter-spacing: 3.0px;
+}
+
+.Plan-items {
+  width: calc(100% - 200px);
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Plan-item {
+  color: #FFF;
+  line-height: 1.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Plan-item h3 {
+  color: #FFF;
+  text-align: center;
+}
+
+.Plan-logo {
+  max-height: 90px;
+  max-width: 90px;
+}
+
+.Feedback {
+  height: 850px;
+}
+
+.Feedback-contents {
+  line-height: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Feedback-title{
+  padding-bottom: 3px;
+  margin: 50px auto;
+  letter-spacing: 2.0px;
+}
+
+.Feedback h2{
+  border-bottom: 2px solid #0099FF;
+}
+
+.Feedback-itemTitle1{/*nth-childでできる？*/
+  color: #0099FF;
+  font-weight: bold;
+}
+
+.Feedback-itemTitle2{
+  color: #FF9900;
+  font-weight: bold;
+}
+
+.Feedback-item1{
+  height: 160px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Feedback-item2{
+  height: 160px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.Feedback-itemInner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.Feedback-people{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.Button-feedback{
+  width: 200px;
+  height: 40px;
+  border: 2px solid #0099FF;
+  border-radius: 50px;
+  background-color: #FFF;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button-feedback{
+  color: #0099FF;
+  font-weight: bold;
+}
+
+.Button-feedback:hover{
+  background-color: #0099FF;
+  color: #FFF;
+}
+
+.Contact{
+  width: calc(100% - 250px);
+  height: 600px;
+  border: 2px solid #FF9900;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Contact h2{
+  border-bottom: 2px solid #FF9900;
+}
+
+.Contact-title{
+  padding-bottom: 1px;
+  letter-spacing: 2px;
+}
+
+.Contact-contents{
+  width: 70%;
+}
+
+input{
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 9px 0;
+  color: #DDDDDD;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.Name{
+  margin-left: 100px;
+  background-color: #EEEEEE;
+}
+
+.Mail{
+  margin-left: 35px;
+  background-color: #EEEEEE;
+}
+
+.Contact-Form{
+  display: flex;
+}
+
+.Form{
+  margin-left: 20px;
+  background-color: #EEEEEE;
+  border: none;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  padding-top: 10px;
+  color: #DDDDDD;
+}
+
+.Contact-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0 auto;
+}
+
+.Submit{
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #FF9900;
+  background-color: #FFF;
+  border: 2px solid #FF9900;
+  padding: 10px;
+}
+
+.Contact-submit:hover input{
+  color: #FFF;
+  background-color: #FF9900;
+}
+
+.Follow{
+  height: 150px;
+  width: 100%;
+  background-color: #0099FF;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Follow-title{
+  color: #FFF;
+  margin-top: -10px;
+}
+
+.Follow-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Follow-sns{
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Follow-sns img{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+footer{
+  margin-top: -11px;
+  height: 30px;
+}
+
+footer p{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
